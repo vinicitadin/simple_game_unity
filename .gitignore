@@ -1,0 +1,125 @@
+# =========================
+
+# Unity generated folders
+
+# =========================
+
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+MemoryCaptures/
+
+# =========================
+
+# Auto generated files
+
+# =========================
+
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# =========================
+
+# Unity meta files (NÃO IGNORAR!)
+
+# =========================
+
+!*.meta
+
+# =========================
+
+# OS generated files
+
+# =========================
+
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# =========================
+
+# IDEs (Visual Studio / VSCode / Rider)
+
+# =========================
+
+.vs/
+.vscode/
+.idea/
+
+# =========================
+
+# Crash Reports
+
+# =========================
+
+sysinfo.txt
+
+# =========================
+
+# Builds
+
+# =========================
+
+*.apk
+*.aab
+*.unitypackage
+*.app
+*.exe
+*.ipa
+
+# =========================
+
+# Addressables (se usar)
+
+# =========================
+
+ServerData/
+
+# =========================
+
+# IL2CPP builds
+
+# =========================
+
+il2cppOutput/
+
+# =========================
+
+# Cache do Shader
+
+# =========================
+
+ShaderCache/
+
+# =========================
+
+# Testes
+
+# =========================
+
+TestResults/
+
+# =========================
+
+# JetBrains Rider
+
+# =========================
+
+*.sln.iml
