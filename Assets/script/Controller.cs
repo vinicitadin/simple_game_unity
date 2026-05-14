@@ -35,6 +35,8 @@ public class Controller : MonoBehaviour
 
     public ColorCode colorCode;
 
+    public GameObject gameOverScreenObj;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -85,6 +87,13 @@ public class Controller : MonoBehaviour
         {
             rb.AddForce(0, velJump * rb.mass, 0);
         }
+        if (Input.GetKey(KeyCode.Return))
+        {
+            if(gameOverScreenObj.activeSelf)
+            {
+                StartGame();
+            }
+        }
     }
 
     public void Pontuar(int valor, ColorCode colorCode)
@@ -113,5 +122,29 @@ public class Controller : MonoBehaviour
     public void PlayFx(AudioClip clip)
     {
         fxAs.PlayOneShot(clip);
+    }
+
+    public void GameOver()
+    {
+        gameOverScreenObj.SetActive(true);
+        musicAs.Stop();
+        rb.Sleep();
+    }
+
+    private void StartGame()
+    {
+        gameOverScreenObj.SetActive(false);
+
+        personagem.transform.position = new Vector3(1, 1, 0);
+
+        rb.WakeUp();
+
+        for (int i = 0; i < score.Length; i++)
+        {
+            score[i] = 0;
+            pontosTxt[i].text = "Pontos: " + score[i];
+        }
+
+        PlayMusic();
     }
 }
